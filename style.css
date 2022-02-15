@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url("https://c8.alamy.com/comp/J18PE7/school-or-art-background-J18PE7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+}
+
+#innerwrap{
+    padding: 45px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px black;
+    background-color: white;
+}
+
+#innerwrap button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bolder;
+}
+
+span{
+    float: right;
+    margin: 25px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#modal-overlay{
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+#modal{
+    background-color: white;
+    border-radius: 20px;
+    height: 205px;
+    width: 550px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 25px black;
+    text-align: center;
+    opacity: 1;
+}
+
+#modal p{
+    padding: 80px;
+}
+
+
+.visible{
+    z-index: 3;
+    visibility: visible;
+}
+
+.hidden{
+    z-index: -1;
+    visibility: hidden;
+}
